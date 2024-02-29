@@ -1,70 +1,10 @@
-Last login: Fri Feb 23 07:47:04 on ttys000
-➜  ~ 
-➜  ~ dockerd
-zsh: command not found: dockerd
-➜  ~ sudo service docker status
-
-
-Password:
-sudo: service: command not found
-➜  ~ service docker-daemon start
-zsh: command not found: service
-➜  ~ open -a Docker
-
-➜  ~ dockerd 
-zsh: command not found: dockerd
-➜  ~ docker ps
-CONTAINER ID   IMAGE              COMMAND                  CREATED        STATUS          PORTS                    NAMES
-b15d73b5347d   flask-web-server   "python3 -m flask ru…"   2 months ago   Up 29 seconds   0.0.0.0:5445->5000/tcp   gilscon
-➜  ~ docker ps --all
-CONTAINER ID   IMAGE                                 COMMAND                  CREATED        STATUS                      PORTS                    NAMES
-b15d73b5347d   flask-web-server                      "python3 -m flask ru…"   2 months ago   Up 35 seconds               0.0.0.0:5445->5000/tcp   gilscon
-9efd75810e4d   gcr.io/k8s-minikube/kicbase:v0.0.42   "/usr/local/bin/entr…"   2 months ago   Exited (137) 2 months ago                            minikube
-➜  ~ dockered
-zsh: command not found: dockered
-➜  ~ docker dockerd
-docker: 'dockerd' is not a docker command.
-See 'docker --help'
-➜  ~ 
-➜  ~ ls
-Desktop         Documents       Downloads       Library         Movies          Music           Pictures        Postman         Public          PycharmProjects
-➜  ~ cd Desktop 
-➜  Desktop cd ../Downloads/cvweb 
-➜  cvweb touch index.html
-➜  cvweb nano index.html 
-➜  cvweb touch style.css
-➜  cvweb nano style.css 
-➜  cvweb nano index.html 
-➜  cvweb cp style.css 1.css
-➜  cvweb rm style.css 
-➜  cvweb nano style.css
-➜  cvweb nano index.html
-➜  cvweb rm -rfv ./*
-zsh: sure you want to delete all 4 files in /Users/gilsinai/Downloads/cvweb/. [yn]? y
-./1.css
-./index.html
-./index2.html
-./style.css
-➜  cvweb ls
-➜  cvweb nano style.css 
-➜  cvweb ls
-➜  cvweb mkdir css
-➜  cvweb cd css
-➜  css nano style.css
-➜  css cd ..
-➜  cvweb nano index.html
-➜  cvweb nano index.html 
-➜  cvweb nano index.html 
-➜  cvweb nano index.html
-➜  cvweb nano index.html
-➜  cvweb cat index.html 
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
   <meta charset="utf-8">
   <title>Elon's personal site 👤</title>
-  <link href="css/style.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
   <link href="favicon.ico" rel="icon">
 
 
@@ -76,7 +16,7 @@ zsh: sure you want to delete all 4 files in /Users/gilsinai/Downloads/cvweb/. [y
 <table cellspacing="20">
   <tr>
     <td>
-      <img class="profile-image" src="images/profile2.jpeg" alt="Elon profile img">
+      <img class="profile-image" src="profile2.jpeg" alt="Elon profile img">
     </td>
     <td>
       <h1 class="prime-title"> Elon Glam</h1>
